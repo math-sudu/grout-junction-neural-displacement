@@ -1,0 +1,30 @@
+{
+  "full_domain": {
+    "nodes": 40,
+    "edge_nodes": 192,
+    "support_nodes": 16,
+    "rcond": 1e-9,
+    "check_nodes": 64,
+    "check_edge_nodes": 256,
+    "check_support_nodes": 24,
+    "region_nodes": 24
+  },
+  "equilibrium_control": {
+    "nodes": 24,
+    "edge_nodes": 192,
+    "support_nodes": 12,
+    "check_nodes": 40,
+    "check_edge_nodes": 256,
+    "check_support_nodes": 16,
+    "length_over_arm_width": 1.0,
+    "interface_metric": "spring",
+    "equilibrium_metric": "reference"
+  },
+  "equation_moments": {
+    "edge_nodes": 64,
+    "check_edge_nodes": 96,
+    "degree": 2,
+    "junction_radius_over_arm_width": 0.5
+  },
+  "equilibrium_control_scope": "full"
+}

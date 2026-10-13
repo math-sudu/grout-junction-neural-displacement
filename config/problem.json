@@ -1,0 +1,13 @@
+{
+  "geometry": "cross",
+  "soil_E_MPa": 79.9,
+  "grout_E_MPa": 12700.0,
+  "poisson": 0.3,
+  "specimen_size_mm": 100.0,
+  "applied_shortening_mm": 0.1,
+  "normal_K_MPa_per_mm": 10.0,
+  "tangent_K_MPa_per_mm": 10.0,
+  "grout_area_fraction": 0.1,
+  "vertical_span": 0.8,
+  "horizontal_span": 0.6
+}

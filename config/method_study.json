@@ -1,0 +1,38 @@
+{
+  "input_ref": "data/inputs/offset_t_inputs.json",
+  "source_input_ref": "data/inputs/forward_inputs.json",
+  "cross_checkpoint_ref": "results/feasibility/partitioned_2d/cross_energy_local_adapted.pt",
+  "output_directory": "results/method_study",
+  "seed": 7,
+  "full_domain": {
+    "width": 12,
+    "edge_width": 8,
+    "local": {"radius": 0.1, "width": 6, "seed": 17},
+    "nodes": 24,
+    "edge_nodes": 64,
+    "rcond": 1e-9,
+    "check_nodes": 40,
+    "check_edge_nodes": 128,
+    "region_nodes": 24
+  },
+  "cross_support": {
+    "radius_factor": 2.0,
+    "width": 12,
+    "seed": 29,
+    "nodes": 40,
+    "edge_nodes": 48,
+    "rcond": 1e-9,
+    "check_nodes": 60,
+    "check_edge_nodes": 192,
+    "region_nodes": 48
+  },
+  "runs": [
+    {"id": "t_equal_base", "interface": "equal", "representation": "base"},
+    {"id": "t_equal_corners", "interface": "equal", "representation": "corners"},
+    {"id": "t_equal_local", "interface": "equal", "representation": "local"},
+    {"id": "t_sliding_base", "interface": "sliding", "representation": "base"},
+    {"id": "t_sliding_corners", "interface": "sliding", "representation": "corners"},
+    {"id": "t_sliding_local", "interface": "sliding", "representation": "local"},
+    {"id": "cross_additive_support", "representation": "cross_additive_support"}
+  ]
+}

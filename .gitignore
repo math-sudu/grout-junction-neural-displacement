@@ -1,0 +1,14 @@
+/data/
+/results/
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.pdf
+*.png
+*.svg
+*.tmp
